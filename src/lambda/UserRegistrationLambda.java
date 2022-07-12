@@ -17,4 +17,11 @@ public class UserRegistrationLambda {
         };
         last_name.userValidation(lname);
     }
+    public void E_Mail(String mail){
+        Validation email = (String name) -> {
+            Pattern pattern = Pattern.compile("^[a-z\\d+_.-]+@[a-z\\d.-]+$");
+            pattern.matcher(name);
+        };
+        email.userValidation(mail);
+    }
 }

@@ -13,4 +13,9 @@ public class UserRegistrationLambdaTest {
         UserRegistrationLambda obj = new UserRegistrationLambda();
         obj.lastNameValid("Hoque");
     }
+    @Test
+    public void E_Mail(){
+        UserRegistrationLambda obj = new UserRegistrationLambda();
+        obj.E_Mail("inam@gmail.com");
+    }
 }
