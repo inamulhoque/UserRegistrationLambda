@@ -14,8 +14,13 @@ public class UserRegistrationLambdaTest {
         obj.lastNameValid("Hoque");
     }
     @Test
-    public void E_Mail(){
+    public void testE_Mail(){
         UserRegistrationLambda obj = new UserRegistrationLambda();
         obj.E_Mail("inam@gmail.com");
+    }
+    @Test
+    public void testMobile(){
+        UserRegistrationLambda obj = new UserRegistrationLambda();
+        obj.mobileValid("+919101149275");
     }
 }

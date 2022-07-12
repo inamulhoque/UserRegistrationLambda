@@ -24,4 +24,9 @@ public class UserRegistrationLambda {
         };
         email.userValidation(mail);
     }
+    public void mobileValid(String mobile_no){
+        Validation  phone = (String name) -> {
+            Pattern pattern = Pattern.compile("[+91]+[\\d]{10}$");
+        };
+    }
 }
