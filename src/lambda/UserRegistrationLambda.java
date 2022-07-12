@@ -29,4 +29,10 @@ public class UserRegistrationLambda {
             Pattern pattern = Pattern.compile("[+91]+[\\d]{10}$");
         };
     }
+
+    public void passwordValid(String password) {
+        Validation pass_word = (String name) -> {
+            Pattern pattern = Pattern.compile("^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=])(?=\\\\S+$).{7,}$");
+        };
+    }
 }

@@ -23,4 +23,9 @@ public class UserRegistrationLambdaTest {
         UserRegistrationLambda obj = new UserRegistrationLambda();
         obj.mobileValid("+919101149275");
     }
+    @Test
+    public void testPassword(){
+        UserRegistrationLambda obj = new UserRegistrationLambda();
+        obj.passwordValid("Inam@123");
+    }
 }
