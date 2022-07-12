@@ -10,4 +10,11 @@ public class UserRegistrationLambda {
         };
         first_name.userValidation(fname);
     }
+    public void lastNameValid(String lname){
+        Validation last_name = (String name) -> {
+            Pattern pattern = Pattern.compile("^[A-Z][a-z]{2,}$");
+            pattern.matcher(name);
+        };
+        last_name.userValidation(lname);
+    }
 }

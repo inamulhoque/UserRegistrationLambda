@@ -8,4 +8,9 @@ public class UserRegistrationLambdaTest {
         UserRegistrationLambda obj = new UserRegistrationLambda();
         obj.firstNameValid("Inamul");
     }
+    @Test
+    public void lastFirstName(){
+        UserRegistrationLambda obj = new UserRegistrationLambda();
+        obj.lastNameValid("Hoque");
+    }
 }
